@@ -1,0 +1,61 @@
+[
+  {
+    "id": 1,
+    "name": "Documents",
+    "children": [
+      {
+        "id": 2,
+        "name": "Work",
+        "children": [
+          {
+            "id": 3,
+            "name": "Project A"
+          },
+          {
+            "id": 4,
+            "name": "Project B"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Personal", 
+        "children": [
+          {
+            "id": 6,
+            "name": "Photos",
+            "children": [
+              {
+                "id": 7,
+                "name": "Family" 
+              },
+              {
+                "id": 8,
+                "name": "Friends" 
+              }
+            ]
+          },
+          {
+            "id": 9,
+            "name": "Documents" 
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Music", 
+    "children": [
+      {
+        "id": 11,
+        "name": "Pop" 
+      },
+      {
+        "id": 12,
+        "name": "Rock" 
+        
+      }
+    ]
+  }
+]

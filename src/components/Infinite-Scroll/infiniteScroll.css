@@ -1,0 +1,21 @@
+.infinite-scroll-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .scroll-card {
+    width: 1000px;
+    margin: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    
+  }
+
+  .loading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

@@ -1,25 +1,35 @@
-import logo from './logo.svg';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import NavBar from './components/NavBar.js';
+import ElementTransfer from './components/ElementTransfer/ElementTransfer.js';
+import InfiniteScroll from './components/Infinite-Scroll/InfiniteScroll.js';
+import BoxGame from './components/box-game/BoxGame.js';
+import ParentChildList from './components/parent-child/ParentChildList.js';
+import SquareGrid from './components/square-box/SquareBox.js'
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar /> 
+      
+      <Routes>
+       <Route path="/" element={<Home/>} />
+       <Route path="/scroll" element={<InfiniteScroll/>} />
+       <Route path="/parentchild" element={<ParentChildList/>} />
+       <Route path="/game" element={<BoxGame/>} />
+       <Route path="/element" element={<ElementTransfer/>} />
+       <Route path="/box" element={<SquareGrid />} />
+     </Routes>
     </div>
   );
 }
 
 export default App;
+function Home(){
+  return(
+    <div className='text-center mt-5'>
+  <h5 >Please Click on the component titles mentioned in the Nav Bar to navigate to the tasks.</h5>
+  </div>
+)
+}

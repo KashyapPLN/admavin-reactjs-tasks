@@ -1,0 +1,36 @@
+.bucket {
+    height: 700px;
+    width: 400px;
+    border: 2px solid grey;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .bucketlist {
+    border-radius: 8px;
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .elementTransfer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .buttons > Button {
+    width: 120px;
+    margin: 30px;
+  }
+  
